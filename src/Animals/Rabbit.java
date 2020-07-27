@@ -27,9 +27,9 @@ public class Rabbit extends Animal {
 				
 		//Set Horniness
 			if(random.nextBoolean()) {
-				this.horniness = 3 + random.nextFloat() * 3;
+				this.horniness = 5 + random.nextFloat() * 3;
 			} else {
-				this.horniness = 3 - random.nextFloat() * 3;
+				this.horniness = 5 - random.nextFloat() * 3;
 			}		
 		
 	}

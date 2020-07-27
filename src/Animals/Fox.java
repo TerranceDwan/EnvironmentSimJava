@@ -4,6 +4,36 @@ import java.util.Random;
 
 public class Fox extends Animal {
 	
+	public Fox(){
+		Random random = new Random();
+		this.age = 0;
+		this.longevity = 75;
+		this.hunger = 100;
+		this.thirst = 100;
+		//Set Gender
+			Boolean masculineGenes = random.nextBoolean();
+			if(masculineGenes) {
+				this.gender = "Male";
+			} else {
+				this.gender = "Female";
+			}
+				
+		//Set Speed
+			if(random.nextBoolean()) {
+				this.speed = 7 + random.nextFloat() * 2;
+			} else {
+				this.speed = 7 - random.nextFloat() * 2;
+			}
+				
+		//Set Horniness
+			if(random.nextBoolean()) {
+				this.horniness = 5 + random.nextFloat() * 3;
+			} else {
+				this.horniness = 5 - random.nextFloat() * 3;
+			}		
+		
+	}
+	
 	Fox(Fox male, Fox female){
 		Random random = new Random();
 		
