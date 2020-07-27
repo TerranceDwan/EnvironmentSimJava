@@ -6,6 +6,9 @@ public class Rabbit extends Animal {
 	
 	public Rabbit(){
 		Random random = new Random();
+		this.position = new int[2];
+		this.position[0] = random.nextInt(100);
+		this.position[1] = random.nextInt(100);
 		this.age = 0;
 		this.longevity = 75;
 		this.hunger = 100;
