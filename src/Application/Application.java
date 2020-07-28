@@ -13,7 +13,15 @@ public class Application {
 		
 		for(int i = 0; i < rabbits.length; i++) {
 			rabbits[i] = new Rabbit();
-			System.out.println(Arrays.toString(rabbits[i].position));
 		}
+		int i = 0;
+		while(i < 15) {
+			for(int j = 0; j < rabbits.length; j++) {
+				rabbits[j].move();
+			}
+			i++;
+		}
+		
+		
 	}
 }

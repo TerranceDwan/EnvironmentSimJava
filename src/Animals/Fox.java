@@ -83,6 +83,9 @@ public class Fox extends Animal {
 	void reproduce() {
 		
 	}
+	void sprint() {
+		
+	}
 	void move() {
 		
 	}

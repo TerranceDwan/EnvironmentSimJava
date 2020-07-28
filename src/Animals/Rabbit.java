@@ -1,5 +1,6 @@
 package Animals;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Rabbit extends Animal {
@@ -81,16 +82,53 @@ public class Rabbit extends Animal {
 		}
 		
 	}
-	void reproduce() {
+	public void reproduce() {
 		
 	}
-	void move() {
+	public void sprint() {
 		
 	}
-	void mate() {
+	public void move() {
+		Random random = new Random();
+		if(random.nextBoolean()) {
+			if(this.position[0] <= 0) {
+				this.position[0]++;
+			}
+			else if(this.position[0] >= 100) {
+				this.position[0]--;
+			}
+			else {
+				if(random.nextBoolean()) {
+					this.position[0]++;
+				}
+				else {
+					this.position[0]--;
+				}
+			}
+		}
+		else {
+			if(this.position[1] <= 0) {
+				this.position[1]++;
+			}
+			else if(this.position[1] >= 100) {
+				this.position[1]--;
+			}
+			else {
+				if(random.nextBoolean()) {
+					this.position[1]++;
+				}
+				else {
+					this.position[1]--;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(this.position));
+	}
+	public void mate() {
 
 	}
-	void eat() {
+	public void eat() {
 		
 	}
+
 }

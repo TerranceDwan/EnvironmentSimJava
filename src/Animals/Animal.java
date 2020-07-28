@@ -12,6 +12,7 @@ public abstract class Animal {
 	public float longevity;
 	
 	abstract void move();
+	abstract void sprint();
 	abstract void eat();
 	abstract void mate();
 	abstract void reproduce();
