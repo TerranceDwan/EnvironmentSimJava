@@ -1,7 +1,5 @@
 package Application;
 
-import java.util.Arrays;
-
 import Animals.Fox;
 import Animals.Rabbit;
 
@@ -20,7 +18,6 @@ public class Application {
 			}
 			System.out.println(rabbits[0].hunger);
 		}
-		
-		
+
 	}
 }

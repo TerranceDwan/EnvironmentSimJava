@@ -5,8 +5,8 @@ import java.util.Random;
 
 public class Rabbit extends Animal {
 	
+	Random random = new Random();
 	public Rabbit(){
-		Random random = new Random();
 		this.position = new int[2];
 		this.position[0] = random.nextInt(100);
 		this.position[1] = random.nextInt(100);
@@ -38,7 +38,6 @@ public class Rabbit extends Animal {
 		
 	}
 	Rabbit(Rabbit male, Rabbit female){
-		Random random = new Random();
 		
 		//Set Age
 		this.age = 0;
@@ -89,7 +88,6 @@ public class Rabbit extends Animal {
 		
 	}
 	public void move() {
-		Random random = new Random();
 		if(random.nextBoolean()) {
 			if(this.position[0] <= 0) {
 				this.position[0]++;

@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Fox extends Animal {
 	
+	Random random = new Random();
 	public Fox(){
-		Random random = new Random();
 		this.age = 0;
 		this.longevity = 75;
 		this.hunger = 100;
@@ -35,7 +35,6 @@ public class Fox extends Animal {
 	}
 	
 	Fox(Fox male, Fox female){
-		Random random = new Random();
 		
 		//Set Age
 		this.age = 0;
