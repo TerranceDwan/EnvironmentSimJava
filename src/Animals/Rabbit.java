@@ -122,13 +122,14 @@ public class Rabbit extends Animal {
 				}
 			}
 		}
+		this.hunger--;
 		System.out.println(Arrays.toString(this.position));
 	}
 	public void mate() {
 
 	}
 	public void eat() {
-		
+		this.hunger = 0;
 	}
 
 }
