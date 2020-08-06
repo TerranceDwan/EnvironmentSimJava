@@ -10,6 +10,7 @@ public abstract class Animal {
 	public float thirst;
 	public float age;
 	public float longevity;
+	public float gestationPeriod;
 	
 	abstract void move();
 	abstract void sprint();
